@@ -5,11 +5,6 @@
     "version": "1.0",
     "description": "Find your lost tab",
     "icons":{"128":"LogoMakr_128.png"},
-    "content_scripts": [{
-      "matches": ["<all_urls>"],
-        "js":["content.js"]
-      }],
-
       "browser_action":{
         "default_icon":"LogoMakr_19.png",
         "default_popup":"popup.html",
