@@ -2,16 +2,46 @@
 <html>
 <head>
 <title>Messy Tabs</title>
+<style>
+    input[type="text"]{
+        animation: mymove 5s infinite;
+        border: none;
+         border-bottom: 2px solid darkgrey;
+         background-color: inherit;
+        display: block;
+         width: 100%;
+         margin: none;
+    }
+    
+    input :focus,select:focus{
+     outline: none;
+    }
+    a:link, a:visited {
+  background-color:darkcyan;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
 
+a:hover, a:active {
+  background-color:cadetblue;
+}
+
+ 
+
+</style>
 </head>
-<body>
+<body style="background-image: linear-gradient(to bottom, white, cyan);">
 <img src="img/LogoMakr_3NeF6a.png" width="200px" height="100px" style="display: block;" /><br>
-<label>Tab Title</label><br>
+<label style="font-weight: bolder;">Tab Title - URL</label><br><br>
 <input id="title" style="padding: 10px;" type="text" width="200px" height="50px"/><br>
-<label>Tab content</label><br>
-<input style="padding: 10px;" type="text" width="200px" height="50px"/><br>
-<input id="btn" type="button" value="Find" width="100px" height="10px" style="margin-left:80px;margin-top:20px; background-color: aqua;" ></input>
+
+<input id="btn" type="button" value=" Search " width="100px" height="10px" style="text-align:center;  margin-top:20px; margin-bottom: 20px; font-weight: 200; padding: 15px; border-radius: 10px; background-color: aqua;" ></input>
+<div id="tabs"></div>
 <script src="popup.js"></script>
+
 </body>
 
 </html>
